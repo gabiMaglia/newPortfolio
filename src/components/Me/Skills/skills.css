@@ -1,0 +1,46 @@
+.skillCenter {
+  padding: 3rem;
+  display: flex;
+  width: 70vw;
+  height: 100%;
+  border: 1px solid black;
+  margin: auto auto;
+  /* background-color: black; */
+}
+
+.softSkills,
+.hardSkills {
+  text-align: center;
+  flex-grow: 1;
+  flex-shrink: 0;
+  box-shadow: 0 10px 30px -15px var(--shadow);
+  color: #eee;
+}
+.softSkills {
+}
+.hardSkills {
+  border: 10px solid black;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.skillcont {
+  margin: 1rem;
+  max-height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px -15px var(--shadow);
+  border: 10px solid black;
+}
+.skillsImg {
+  width: 60px;
+
+  max-height: 120px;
+  filter: grayscale(100%);
+}
