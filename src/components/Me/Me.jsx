@@ -23,7 +23,7 @@ const Me = () => {
         <Route path="personal" element={<Personal />} />
         <Route path="skills" element={<Skills />} />
         <Route path="experience" element={<Experience />} />
-        <Route path="github" element={<Github />} />
+       
       </Routes>
     </>
   );

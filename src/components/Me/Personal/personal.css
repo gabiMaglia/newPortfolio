@@ -2,16 +2,16 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 4rem;
-  /* border-radius: 8% !important; */
-  border: 10px solid black;
 }
+
 .photo-div {
-  width: 100%;
   background: black;
   display: grid;
+  width: 100%;
   place-content: center;
+  
 }
+
 .photo {
   box-shadow: 5px 5px 1px black;
   min-width: 110px;
@@ -23,32 +23,38 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  display: grid;
+  
 }
 
 .main-data-div {
+  order: -1;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  padding: 2em 1em;
+  padding-inline: 6rem;
   border-bottom: 1.25em solid black;
-  margin-top: 3rem;
-  padding: 1rem auto;
-  padding-bottom: 2em;
 }
 
 .about {
   padding: 3em 1em;
+  text-align: center;
 }
 
 .hobbies {
   border-top: 1.25em solid black;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding: 2em 1em;
+  padding-bottom: 4rem;
+  display: grid;
+  align-content: center;
 }
+
 .hobbies h3 {
-  padding-bottom: 1em;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .list {
@@ -63,60 +69,120 @@
 .list li {
   gap: 15px;
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
 }
+@media screen and (max-width: 624px) {
+  .main-data-div {
+  justify-content: center;
+  }
+}
+@media screen and (max-width: 468px) {
+  .main-data-div {
+    justify-content: space-between;
+    display: flex;
+    gap: 1em;
+    font-size: large;
+    padding-inline: 1rem;
+  }
+  .name h1 {
+    font-weight: 700;
+    font-size: 48px;
+  }
 
+  .name h2 {
+    font-size: 20px;
+  }
+  .contact {
+    padding-top: 2em;
+    margin-left: auto;
+  }
+}
 @media screen and (min-width: 992px) {
-  #personal-data {
-    padding-top: 3rem;
-  }
   .center {
-    border: 12px solid black;
+    /* margin:auto 0; */
+    /* margin-bottom: 13rem; */
+    
+    margin-top: min(7.4%, 6rem);
+    display: grid;
+    place-content: center;
   }
+
+  #personal-data {
+    width: 1280px!important;
+  }
+
   .photo {
     max-width: 460px;
   }
 
   .data-div {
-    min-height: 100%;
     border: 1.25em solid black;
-    display: flex;
-    flex-direction: column;
-    padding: 0 2em 2em 2em;
+    border-top: black solid .20em;
+    border-left: black solid .20em;
+    display: grid;
+    place-content: center;
+    grid-template-rows: 2fr 3fr 2fr;
+    padding: 2em;
+    margin-inline: 0;
+  
   }
+
   .main-data-div {
-    padding-bottom: 0;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    order: 0;
+    /* padding-bottom: 3em; */
+    border-bottom: none;
+    gap: 1.5rem;
   }
 
   .name h1 {
     font-weight: 700;
     font-size: 64px;
-    margin-bottom: 0.5rem;
+    white-space: nowrap;
   }
+
   .name h2 {
     font-size: 24px;
-    margin-bottom: 3rem;
   }
 
   .contact {
-    padding: 1em 0;
-    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 1rem;
+    margin-top: 2.35rem
+    
   }
 
   .about {
-    padding: 1em 1em;
+    padding: 0;
+    border-bottom: 1.25em solid black;
   }
+
   .about h3 {
     font-weight: 600;
   }
+
   .about p {
     font-size: 18px;
     font-weight: 400;
   }
   .hobbies {
+  
+    padding: 2em 1em;
     padding-bottom: 0rem;
+    display: grid;
+    /* align-content: end; */
+  }
+  .hobbies {
+    padding: 0;
+    padding-top: 1rem;
+    margin-bottom: -1.5rem;
   }
   .hobbies h3 {
-    padding-bottom: 2rem;
+    padding-bottom: 0.5rem;
   }
 }

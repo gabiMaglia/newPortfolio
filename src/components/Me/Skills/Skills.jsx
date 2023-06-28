@@ -6,6 +6,7 @@ import "./skills.css";
 
 const Skills = () => {
   const hardSkills = [
+
     {
       skill: "Javascript",
       img: "Javascript.png",
@@ -36,82 +37,60 @@ const Skills = () => {
       skill: "Growth Mindset",
       img: "GrowthMindset.png",
     },
-    {
-      skill: "Perfectionist",
-      img: "perfectionist.png",
-    },
+
   ];
 
   return (
-    <section className="d-flex  flex-wrap   m-3 mt-5 p-4 pt-5 main-sec">
-      <div className="skillCenter">
+   
+    <section id="skills-data" className="container-fluid bg-white  g-0 pt-4">
         <article className="hardSkikll">
-          {hardSkills.map((obj, i) => {
-            const loadImage = (imageName) =>
-              require(`../../../assets/skills/${imageName}`);
-            return (
-              <div className="skillcont " key={i}>
-                <h2>{obj.skill}</h2>
-                <img
-                  className="skillsImg"
-                  src={loadImage(obj.img)}
-                  alt={obj.img}
-                />
-              </div>
-            );
-          })}
-        </article>
-        <article className="softSkills">
-          {softSkils.map((obj, i) => {
-            const loadImage = (imageName) =>
-              require(`../../../assets/skills/${imageName}`);
-            return (
-              <div className="skillcont bg-black" key={i}>
-                <h2>{obj.skill}</h2>
-                <img
-                  className="skillsImg"
-                  src={loadImage(obj.img)}
-                  alt={obj.img}
-                />
-              </div>
-            );
-          })}
-        </article>
-      </div>
 
-      {/* <article className="hardSkikll">
-        {hardSkills.map((obj, i) => {
-          const loadImage = (imageName) =>
-            require(`../../../assets/skills/${imageName}`);
-          return (
-            <div className="skillcont " key={i}>
-              <h2>{obj.skill}</h2>
-              <img
-                className="skillsImg"
-                src={loadImage(obj.img)}
-                alt={obj.img}
-              />
+            
+          <figure>
+            <figcaption ><p className="hover-underline-animation-dark  text-black" >Soft Skills</p></figcaption>
+            <div className="list-cont">
+              {softSkils.map((obj, i) => {
+                const loadImage = (imageName) =>
+                  require(`../../../assets/skills/${imageName}`);
+                return (
+                  <div className="skill-cont bg-black  " key={i}>
+                    <h2 className="hover-underline-animation-light">{obj.skill}</h2>
+                    <img
+                      className="skillsImg"
+                      src={loadImage(obj.img)}
+                      alt={obj.img}
+                    />
+                  </div>
+                );
+              })}
             </div>
-          );
-        })}
-      </article>
-      <article className="softSkills">
-        {softSkils.map((obj, i) => {
-          const loadImage = (imageName) =>
-            require(`../../../assets/skills/${imageName}`);
-          return (
-            <div className="skillcont bg-black" key={i}>
-              <h2>{obj.skill}</h2>
-              <img
-                className="skillsImg"
-                src={loadImage(obj.img)}
-                alt={obj.img}
-              />
+          </figure>
+        </article>
+
+        <article className="softSkills">
+
+        <figure>
+            <figcaption><p className="hover-underline-animation-dark text-black">Languajes</p></figcaption>
+            <div className='list-cont'>
+            {hardSkills.map((obj, i) => {
+              const loadImage = (imageName) =>
+                require(`../../../assets/skills/${imageName}`);
+              return (
+                <div className="skill-cont bg-black" key={i}>
+                  <h2 className="hover-underline-animation-light">{obj.skill}</h2>
+                  <img
+                    className="skillsImg"
+                    src={loadImage(obj.img)}
+                    alt={obj.img}
+                  />
+                </div>
+              );
+            })}
             </div>
-          );
-        })}
-      </article> */}
-    </section>
+        </figure>
+        </article>
+      </section>
+    
   );
 };
 
