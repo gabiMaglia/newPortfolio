@@ -1,12 +1,9 @@
 .toggle-cont span,
 .toggle-cont i,
 .toggle-cont h4 {
-  font-size: 16px !important;
+  font-size: 16px ;
 }
-.toggle-cont {
-  display: flex;
-  justify-content: space-between;
-}
+
 
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -14,17 +11,7 @@
   outline: none !important;
   box-shadow: none !important;
 }
-.navbar {
-  width: 100%;
-  max-height: 3.5rem;
-  min-height: 3.5rem;
-  position: fixed !important;
-  top: 4rem;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  z-index: 3;
-}
+
 .nav-link {
   font-family: "Sawarabi Gothic", sans-serif !important;
   font-weight: 400 !important;
@@ -32,21 +19,10 @@
   cursor: pointer;
 }
 
-.nav-item-social {
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+.navbar-nav {
+  display: flex;
 }
 
-#navbarNav {
-  margin-top: 1rem !important;
-  justify-content: space-between;
-}
-#login-expand h4,
-#login-expand {
-  font-size: 16px !important;
-  padding-right: 1rem;
-  cursor: pointer;
-}
 @media screen and (min-width: 740px) {
   .nav-item {
     font-weight: 700;
@@ -54,14 +30,6 @@
   }
 }
 
-@media screen and (min-width: 992px) {
-  #login-expand {
-    display: flex !important;
-  }
-  #navbarNav {
-    margin-top: 0rem !important;
-  }
-}
 
 @media screen and (max-width: 992px) {
   .nav-item-social {

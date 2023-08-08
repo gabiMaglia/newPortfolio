@@ -1,29 +1,40 @@
 #skills-data {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: column-reverse;
   align-content: center;
   border: 1px solid #000000;
   color: white;
   font-weight: 800;
   font-size: 56px;
   background-color: black;
+  
   padding-bottom: max( 5rem, 10rem);
-
 
   
 }
+.skillsBlob{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: scale(0.9);
+  filter: opacity(0.2)
+}
+
+
 .skill-cont{
+
   max-width: 500px!important;
   margin-inline: auto;
-  height: 6rem;
+  height: 5rem;
   padding-inline: 2rem;
   display: flex;
   place-content: center;
   justify-content: space-between;
  align-items: center;
  border-radius: 1%;
- /* border: 2px double white; */
 
  
  
@@ -52,12 +63,9 @@ figure figcaption {
   text-align: center;
   background: radial-gradient(circle closest-side, rgba(255, 255, 255, 0.068), transparent);
   padding-top: 3rem ;
-  padding-bottom: 2.5rem ;
+  padding-bottom: 1.5rem ;
 }
-#skills-data figcaption {
-  /* border-bottom: 1px solid white; */
 
-}
 .skill-cont h2 {
   font-size: 26px;
   font-weight: 800;
@@ -70,27 +78,33 @@ figure figcaption {
 
 
 @media screen and (min-width: 992px) {
-
+  .center{
+    padding: 4rem;
+    display: grid;
+    place-content: center;
+  }
 
   #skills-data {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
- 
-    gap: 2rem;
-    max-width: 1280px;
-    max-height: 40.5rem;
-    margin-inline: auto;
-    margin-top: min(7.4%, 6rem);
+     gap: 2rem;
+    max-height: 36.5rem;
+  
+    min-width: 100%;   
+    padding-inline: 8rem;
+    
+
      
-    border-bottom: black solid .20em;
-    border-right: black solid .20em;
+
+    border-radius: 10px;
+    box-shadow: 13px 17px 8px rgba(0, 0, 0, 0.9), 13px 17px 0px rgba(0, 0, 0, 0.9);
   
   }
   
   .softSkills,
   .hardSkikll {
-    padding-top: 4rem ;
+    padding-top: 6rem ;
     min-width: 420px; 
   }
   

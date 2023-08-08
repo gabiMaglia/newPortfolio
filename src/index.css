@@ -12,8 +12,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
 
+
+  /* COLORS */
+
+  --white : white ; 
+  --balck : black;
+}
+html{
+  height: 100%;
+  overflow-x: hidden;
+}
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -59,7 +68,7 @@ button {
 .hover-underline-animation-light {
   display: inline-block;
   position: relative;
-  color: #f0f0f0;
+  color: #ffffff;
 }
 
 .hover-underline-animation-light:after {

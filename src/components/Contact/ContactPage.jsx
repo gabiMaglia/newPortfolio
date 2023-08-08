@@ -4,11 +4,11 @@ import "./contact-page.css";
 const ContactPage = () => {
   return (
     <>
-      <header className="row g-0 mb-5">
+      <header className="row g-0">
         <MiniNav />
       </header>
 
-      <article className=" p-4 pt-5 container-fluid section-container d-flex flex-column article  ">
+      <article className=" p-4 article  ">
         <section className="form-title">
           <strong>
             <h2>CONTACTA CON MIGO</h2>
@@ -103,7 +103,7 @@ const ContactPage = () => {
                 id="exampleFormControlTextarea1"
               ></textarea>
             </div>
-            <button className="button mt-3" type="submit">
+            <button className=" button" type="submit">
               Enviar
             </button>
           </form>

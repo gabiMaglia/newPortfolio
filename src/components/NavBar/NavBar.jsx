@@ -9,13 +9,17 @@ const NavBar = () => {
           GABRIELMAGLIA
         </NavLink>
         <NavLink className="link" to="/proyects">
-          Proyects
+          PROYECTS
         </NavLink>
         <NavLink className="link " to="/contact">
-          Contact
+          CONTACT
         </NavLink>
 
         <div className="socialM p-2 gap-3 ms-auto me-4">
+          <button className="btn btn-outline-dark btn-floating">
+          <i className="fa-sharp fa-solid fa-right-to-bracket"></i>
+            
+          </button>
           <button className="btn btn-outline-dark btn-floating">
             <i className="fa-solid fa-circle-half-stroke"></i>
           </button>

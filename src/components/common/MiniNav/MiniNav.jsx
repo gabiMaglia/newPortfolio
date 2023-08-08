@@ -1,13 +1,13 @@
 import { NavLink } from "react-router-dom";
 import "./miniav.css";
+import SearchBar from "../SearchBar/SearchBar";
 
 const MiniNav = (props) => {
   return (
     <>
-      <nav className="navbar navbar-dark navbar-expand-lg text-light bg-black ">
-        <div className="container-fluid ">
+      <nav id="mininav" className="navbar navbar-dark navbar-expand-lg text-light bg-black d-flex justify-content-center px-2 py-3 ">
           <button
-            className="navbar-toggler container-fluid collapsed border-0  text-light"
+            className="navbar-toggler collapsed border-0   text-light"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -21,18 +21,17 @@ const MiniNav = (props) => {
                 <span className="navbar-toggler-icon"></span>
               </div>
 
-              <div className="d-flex gap-2 align-content-center">
-                <span className="fa-sharp fa-solid fa-right-to-bracket p-1"></span>
-                <h4>Log-in</h4>
-              </div>
+           
             </div>
           </button>
           <div
-            className="collapse navbar-collapse p-0 m-0 g-0 bg-black"
+            className="collapse navbar-collapse bg-black text-center "
             id="navbarNav"
           >
-            <ul className="navbar-nav">
-              {props.sec ? (
+            <ul className="navbar-nav ">
+              {
+              
+              props.sec ? (
                 props.sec.map((item) => (
                   <li className="nav-item ps-4" key={Math.random()}>
                     {" "}
@@ -49,7 +48,7 @@ const MiniNav = (props) => {
                 ))
               ) : (
                 <div className="nav-item-social ps-4">
-                  <button className="btn btn-outline-light  me-2">
+                  <button className="btn btn-outline-light me-2">
                     <i className="fa-brands fa-instagram"></i>
                   </button>
                   <button className="btn btn-outline-light me-2">
@@ -70,11 +69,13 @@ const MiniNav = (props) => {
                 </div>
               )}
             </ul>
+            { 
+            props.searchBar? <SearchBar onSearch={''}/> 
+            : <></>
+            }
           </div>
-          <div id="login-expand" className="d-none gap-2 align-content-center ">
-            <span className="fa-sharp fa-solid fa-right-to-bracket p-1"></span>
-          </div>
-        </div>
+         
+     
       </nav>
     </>
   );

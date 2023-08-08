@@ -1,28 +1,21 @@
+
+
+import useCardTransition from "../../../anim/cardTransition";
+import Card1 from "../../common/Card1/Card1";
 import "./experience.css";
 
+
 const Experience = () => {
+  useCardTransition()
+  
   return (
-    <div className="backgorund ">
+    
       <section
-        id="exp-stu-data"
-        className="container bg-white  g-0 pt-4"
+      id="exp"
       >
-        <article>
-          <h2>Studies</h2>
-        </article>
-
-        <article>
-          <h2>Experience</h2>
-          <div className="exp-cont text-black">
-            <h3 className="exp-title">Municipalidad de Granadero baigorria</h3>
-            <h4 className="exp-activity">Area Manager</h4>
-            <date className='exp-date'>Aplil-2017 to Present Day</date>
-            <p className="exp-description">Responsible for the maintenance and operation(servers, network antenas adn cameras) of the surveillance Center of Granadero Baigorri city</p>
-          </div>
-        </article>
-
+      <Card1 title = 'Municipalidad de Granadero baigorria' activity = 'Area Manage' startDate = 'Present Day' endDate = 'Aplil-2017 '  description = 'Responsible for the maintenance and operation(servers, network antenas adn cameras) of the surveillance Center of Granadero Baigorri city' /> 
       </section>
-    </div>
+   
   );
 };
 

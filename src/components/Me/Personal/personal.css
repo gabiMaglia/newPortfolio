@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-inline: auto;
 }
 
 .photo-div {
@@ -9,14 +10,11 @@
   display: grid;
   width: 100%;
   place-content: center;
-  
 }
 
 .photo {
-  box-shadow: 5px 5px 1px black;
   min-width: 110px;
   width: 100%;
-  padding-top: 1em;
 }
 
 .data-div {
@@ -24,7 +22,6 @@
   flex-direction: column;
   width: 100%;
   display: grid;
-  
 }
 
 .main-data-div {
@@ -37,13 +34,21 @@
   padding: 2em 1em;
   padding-inline: 6rem;
   border-bottom: 1.25em solid black;
+  padding-top: 4rem;
 }
 
 .about {
   padding: 3em 1em;
   text-align: center;
 }
+.about h3 {
+  
+  font-weight: 600!important;
+}
+.about p {
 
+  font-weight: 300!important;
+}
 .hobbies {
   border-top: 1.25em solid black;
   padding: 2em 1em;
@@ -51,7 +56,12 @@
   display: grid;
   align-content: center;
 }
-
+.about p {
+  font-weight: 600;
+}
+.about h4 {
+  font-weight: 200;
+}
 .hobbies h3 {
   text-align: center;
   padding-bottom: 2rem;
@@ -71,60 +81,66 @@
   text-align: center;
   font-size: 22px;
 }
-@media screen and (max-width: 624px) {
+@media screen and (max-width: 626px) {
   .main-data-div {
-  justify-content: center;
+    margin-inline: auto;
+    text-align: center;
+    justify-content: center;
   }
-}
-@media screen and (max-width: 468px) {
-  .main-data-div {
-    justify-content: space-between;
-    display: flex;
-    gap: 1em;
-    font-size: large;
-    padding-inline: 1rem;
+
+  .personal-contact {
+    margin-top: 2rem;
   }
   .name h1 {
     font-weight: 700;
     font-size: 48px;
   }
-
+  
   .name h2 {
     font-size: 20px;
   }
-  .contact {
-    padding-top: 2em;
-    margin-left: auto;
+}
+@media screen and (max-width: 468px) {
+  .main-data-div {
+    font-size: large;
+    padding-inline: 1rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .center {
-    /* margin:auto 0; */
-    /* margin-bottom: 13rem; */
-    
-    margin-top: min(7.4%, 6rem);
+  .center{
+    padding: 4rem;
     display: grid;
     place-content: center;
   }
-
   #personal-data {
-    width: 1280px!important;
+    max-width: 1280px;
+    border: 0.1em solid black;
+    border-radius: 10px;
+    box-shadow: 13px 17px 8px rgba(0, 0, 0, 0.9),
+      13px 17px 0px rgba(0, 0, 0, 0.9);
+  }
+  .photo-div {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 
   .photo {
-    max-width: 460px;
+    box-shadow: 15px 15px 5px black;
+    box-shadow: 15px 15px 5px black, 0px 8px 98px -6px rgba(255, 255, 255, 0.75),
+    0px -4px 30px -99px rgba(255, 254, 254, 0.75); 
+    
+    border-radius: 6px;
   }
-
   .data-div {
     border: 1.25em solid black;
-    border-top: black solid .20em;
-    border-left: black solid .20em;
+    border-top: black solid 0.2em;
+    border-left: black solid 0.2em;
     display: grid;
     place-content: center;
     grid-template-rows: 2fr 3fr 2fr;
     padding: 2em;
     margin-inline: 0;
-  
+    border: none;
   }
 
   .main-data-div {
@@ -132,8 +148,9 @@
     display: flex;
     align-items: center;
     padding: 0;
+    min-height: 14rem;
+    max-height: 14rem;
     order: 0;
-    /* padding-bottom: 3em; */
     border-bottom: none;
     gap: 1.5rem;
   }
@@ -148,34 +165,34 @@
     font-size: 24px;
   }
 
-  .contact {
+  .personal-contact {
     display: flex;
     flex-direction: column;
-    align-self: center;
+    margin-top: 2.72rem;
     gap: 1rem;
-    margin-top: 2.35rem
-    
   }
 
   .about {
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
     border-bottom: 1.25em solid black;
   }
 
   .about h3 {
-    font-weight: 600;
+    margin-top: -2rem;
+    font-weight: 200;
   }
 
   .about p {
     font-size: 18px;
-    font-weight: 400;
   }
   .hobbies {
-  
     padding: 2em 1em;
     padding-bottom: 0rem;
     display: grid;
-    /* align-content: end; */
   }
   .hobbies {
     padding: 0;

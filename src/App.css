@@ -12,3 +12,13 @@ body {
   box-sizing: border-box;
   font-family: "Trade Gothic LT Std", sans-serif;
 }
+
+#app {
+  display: grid;
+  min-height: 100vh;
+  min-height: 100dvh;
+  
+  grid-template-rows: auto 1fr auto;
+}
+
+
