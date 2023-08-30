@@ -1,9 +1,11 @@
 import React from "react";
-import pic1 from "../../../../assets/jobs/front-end-craneo/craneo1.png";
-import pic2 from "../../../../assets/jobs/front-end-craneo/craneo2.png";
-import pic3 from "../../../../assets/jobs/front-end-craneo/craneo3.png";
+// import pic1 from "../../../../assets/jobs/front-end-craneo/craneo1.png";
+// import pic2 from "../../../../assets/jobs/front-end-craneo/craneo2.png";
+// import pic3 from "../../../../assets/jobs/front-end-craneo/craneo3.png";
 
-const CarouselProyects = () => {
+const CarouselProyects = ({fotos}) => {
+  const [pic1] = fotos
+  console.log(pic1)
   return (
     <div>
       <div
@@ -13,14 +15,15 @@ const CarouselProyects = () => {
       >
         <div className="carousel-inner">
           <div className="carousel-item active">
+            
             <img src={pic1} className="d-block carusel-image w-100" alt="..." />
           </div>
-          <div className="carousel-item">
+          {/* <div className="carousel-item">
             <img src={pic2} className="d-block w-100" alt="..." />
           </div>
           <div className="carousel-item">
             <img src={pic3} className="d-block w-100" alt="..." />
-          </div>
+          </div> */}
         </div>
         <button
           className="carousel-control-prev"

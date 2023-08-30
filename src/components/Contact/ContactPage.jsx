@@ -1,11 +1,23 @@
+import { useEffect } from "react";
 import MiniNav from "../common/MiniNav/MiniNav";
 import "./contact-page.css";
 
+
+
 const ContactPage = () => {
+  const socialMedia =[
+    { mode: "light", fontAwsome: 'fa-brands fa-instagram', link : 'https://www.instagram.com/gaberiel_maglia/' },
+    { mode: "light", fontAwsome: 'fa-solid fa-envelopes-bulk', link : 'gab.maglia@gmail.com'  },
+    { mode: "light", fontAwsome: 'fa-brands fa-whatsapp', link : 'wa.link/4cm67w' },
+    { mode: "light", fontAwsome: 'fa-brands fa-facebook', link : 'https://www.facebook.com/gaberielsk/' },
+    { mode: "light", fontAwsome: 'fa-brands fa-linkedin', link : 'https://www.linkedin.com/in/gabriel-maglia-449577238/' },    
+    { mode: "light", fontAwsome: "fa-brands fa-github", link : 'https://github.com/gabiMaglia' },    
+  ]
+
   return (
     <>
       <header className="row g-0">
-        <MiniNav />
+        <MiniNav contact={socialMedia} />
       </header>
 
       <article className=" p-4 article  ">
