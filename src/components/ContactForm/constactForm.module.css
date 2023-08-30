@@ -1,0 +1,42 @@
+
+
+
+.contactForm {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    min-width: none;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  
+  .contactForm input {
+    height: 54px;
+    background: none;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 0;
+  }
+  .button,
+  .textCont,
+  .email {
+    grid-column: 1 / span 2 !important;
+  }
+  .formCont {
+    flex-wrap: wrap;
+  
+    width: 100%;
+  }
+  .formCont div {
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  .text {
+    resize: none;
+    height: 86px !important;
+  }
+  
+  .button {
+    height: 3.2rem;
+    margin-top: 4rem!important;
+  }

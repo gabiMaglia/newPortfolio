@@ -1,44 +1,15 @@
 import ProyectCard from "../ProyectCard/ProyectCard";
-import "./proyectContainer.module.css";
+import styles from "./proyectContainer.module.css";
 
-const proyects = [
-  {
-    titulo: "Gimnasio Craneo",
-    descripcion:
-      "This landing-page is entirely developed in ReactJS, it back-ends is developed in ExpressJS and Handlebars. Back-end can store students and their entire schedule of activities, the list of trainers and how many students are in each class.",
-    tecnologias: "ReactJS/ExpressJS",
-    externalLink: "",
-    foto: ["../../../../../../assets/jobs/front-end-craneo/craneo1.png"],
-    tipo:'Job'
-  },
-  // {
-  //   titulo: "Gimnasio Craneo",
-  //   descripcion:
-  //     "This landing-page is entirely developed in ReactJS, it back-ends is developed in ExpressJS and Handlebars. Back-end can store students and their entire schedule of activities, the list of trainers and how many students are in each class.",
-  //   tecnologias: "ReactJS/ExpressJS",
-  //   externalLink: "",
-  //   foto: ["../../../../assets/jobs/front-end-craneo/craneo1.png","../../../../assets/jobs/front-end-craneo/craneo2.png","../../../../assets/jobs/front-end-craneo/craneo3.png"],
-  //   tipo:'Job'
-  // },
-  // {
-  //   titulo: "Gimnasio Craneo",
-  //   descripcion:
-  //     "This landing-page is entirely developed in ReactJS, it back-ends is developed in ExpressJS and Handlebars. Back-end can store students and their entire schedule of activities, the list of trainers and how many students are in each class.",
-  //   tecnologias: "ReactJS/ExpressJS",
-  //   externalLink: "",
-  //   githubRepo: "",
-  //   foto: ["../../../../assets/jobs/front-end-craneo/craneo1.png","../../../../assets/jobs/front-end-craneo/craneo2.png","../../../../assets/jobs/front-end-craneo/craneo3.png"],
-  //   tipo:'Job'
-  // },
-];
 
-const ProyectContainer = () => {
+
+const ProyectContainer = (props) => {
   return (
     <section>
       <ul>
-        {proyects.map((item, key) => {
+        {props.proyects.map((item, key) => {
           return (
-            <li key={key}>
+            <li className={styles.jobList} key={key}>
               <ProyectCard
                 titulo={item.titulo}
                 descripcion={item.descripcion}

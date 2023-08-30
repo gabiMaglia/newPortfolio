@@ -1,9 +1,12 @@
 import { NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "./miniav.css";
 import SearchBar from "../SearchBar/SearchBar";
 import SocialMediaBtn from "../Button/SocialMediaBtn";
 
 const MiniNav = (props) => {
+  const {pathname} = useLocation()
+  console.log(pathname)
   return (
     <>
       <nav
@@ -31,7 +34,9 @@ const MiniNav = (props) => {
           id="navbarNav"
         >
           <ul className="navbar-nav ">
-            {props.contact ? (
+            {
+            
+            pathname === "/contact"? (
               <div className="nav-item-social ps-4">
                 {props.contact.map((item, key) => (
                   <i key={key}>
@@ -43,7 +48,9 @@ const MiniNav = (props) => {
                   </i>
                 ))}
               </div>
-            ) : props.sec ? (
+            ) 
+            
+            : pathname.startsWith("/me")? (
               props.sec.map((item, key) => (
                 <li className="nav-item ps-4" key={key}>
                   {" "}
@@ -58,13 +65,19 @@ const MiniNav = (props) => {
                   </NavLink>
                 </li>
               ))
-            ) : props.buttons ? (
+            ) 
+            
+            : pathname === "/proyects" ? (
+             
               props.buttons.map((item, key) => (
+                
                 <li className=" ps-4" key={key}>
                   <i className="nav-link ">{item.name}</i>
                 </li>
               ))
-            ) : (
+            ) 
+            
+            : (
               <></>
             )}
           </ul>
