@@ -6,7 +6,7 @@ import SocialMediaBtn from "../Button/SocialMediaBtn";
 
 const MiniNav = (props) => {
   const {pathname} = useLocation()
-  console.log(pathname)
+
   return (
     <>
       <nav
@@ -72,7 +72,7 @@ const MiniNav = (props) => {
               props.buttons.map((item, key) => (
                 
                 <li className=" ps-4" key={key}>
-                  <i className="nav-link ">{item.name}</i>
+                  <i className="nav-link" category={item.category} onClick={props.handleSort}>{item.name}</i>
                 </li>
               ))
             ) 

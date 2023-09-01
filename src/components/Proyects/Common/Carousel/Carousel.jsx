@@ -5,7 +5,7 @@ import React from "react";
 
 const CarouselProyects = ({fotos}) => {
   const [pic1] = fotos
-  console.log(pic1)
+  
   return (
     <div>
       <div

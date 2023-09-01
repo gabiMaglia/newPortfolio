@@ -1,4 +1,4 @@
-.proyect-card{
+.proyectCard{
     border: 1px solid black;
     width: 380px;
     height: 540px;
@@ -7,10 +7,9 @@
     display: flex;
     flex-direction: column;
     gap: .7rem;
-   text-align: center;
-
+    text-align: center;
 }
-.img-cont {
+.imgCont {
     
     width: 100%;
     height: 40%;
@@ -20,12 +19,12 @@
 }
 
 
-.button-links {
+.buttonLinks {
  
     /* border: 1px solid black;  */
     display: flex;
 }
-.button-links button {
+.buttonLinks button {
  
  flex: 1;
 }

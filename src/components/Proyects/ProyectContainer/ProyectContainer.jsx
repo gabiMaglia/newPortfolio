@@ -5,11 +5,11 @@ import styles from "./proyectContainer.module.css";
 
 const ProyectContainer = (props) => {
   return (
-    <section>
-      <ul>
+    <section className={styles.jobContainer}>
+      <ul className={styles.jobList}>
         {props.proyects.map((item, key) => {
           return (
-            <li className={styles.jobList} key={key}>
+            <li className={styles.jobItem} key={key}>
               <ProyectCard
                 titulo={item.titulo}
                 descripcion={item.descripcion}

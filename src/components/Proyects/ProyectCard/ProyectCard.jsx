@@ -1,26 +1,26 @@
 import React from "react";
-import "./proyect-card.css";
+import styles from "./proyectCard.module.css";
 import CarouselProyects from "../Common/Carousel/Carousel";
 
 const ProyectCard = (props) => {
-  const { titulo, descripcion, tecnologias, externalLink, githubRepo, foto, tipo } = props;
- 
+  const { titulo, descripcion, tecnologias, externalLink, githubRepo, foto } = props;
+
   return (
-    <div className="proyect-card">
-      <div className="img-cont">
-        <CarouselProyects fotos={foto} className="img-cont" />
+    <div className={styles.proyectCard}>
+      <div className={styles.imgCont}>
+        <CarouselProyects fotos={foto} className={styles.imgCont} />
       </div>
 
       <h2>{titulo}</h2>
 
-      <div className="description-tech">
-        <p className="description">
+      <div className={styles.descriptionTech}>
+        <p className={styles.description}>
           {descripcion}
         </p>
-        <p className="tech">{tecnologias}</p>
+        <p className={styles.tech}>{tecnologias}</p>
       </div>
 
-      <div className="button-links">
+      <div className={styles.buttonLinks}>
         <button className="btn btn-outline-dark btn-floating">
           <a href={githubRepo}>
             <i className="fa-brands fa-github"></i>

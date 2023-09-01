@@ -1,3 +1,12 @@
+.jobContainer{
+
+}
 .jobList{
+    display:flex;
+    margin-block: auto;
+    justify-content: center;
+}
+.jobItem{
  list-style: none;
+ padding: 2rem;
 }
