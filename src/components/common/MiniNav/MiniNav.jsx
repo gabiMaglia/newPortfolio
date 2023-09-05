@@ -14,7 +14,7 @@ const MiniNav = (props) => {
         className="navbar navbar-dark navbar-expand-lg text-light bg-black d-flex justify-content-center px-2 py-3 "
       >
         <button
-          className="navbar-toggler collapsed border-0   text-light"
+          className="navbar-toggler collapsed border-0 text-light"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
