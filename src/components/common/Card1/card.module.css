@@ -1,14 +1,11 @@
-#card_cont{
+#cardCont{
     max-width: 750px;
     color: white;
     font-weight: 800;
-    margin-inline: auto;
-    margin-top: 3rem;
     box-shadow: 13px 17px 8px rgba(0, 0, 0, 0.9);
     border: .1rem solid rgb(0, 0, 0);
-  
   }
-  .card-title {
+  .cardTitle {
     font-size: 45px;
     text-align: center;
     padding-bottom: 1rem;
@@ -16,61 +13,62 @@
     padding-top: 1rem;
     padding-inline: 1rem;
   }
-  .card-activity {
+
+  .cardActivity {
     text-align: center;
     padding-block: .3rem ;
   }
-  .card-date {
+
+  .cardDate {
     margin-block: auto;
     padding-inline: 1rem;
     font-size: 32px;
     justify-content: space-between;
-   
-  
   }
   
-  .card-description {
+  .cardDescription {
     font-size: 24px;
     padding: 1rem 2rem;
     text-align: center;
   }
   @media screen and (max-width: 460px) {
-      .card-title {
+      .cardTitle {
           font-size: 36px;
         }
-        .card-activity {
+        .cardActivity {
           font-size: 28px;
         }
-        .card-date {
+        .cardDate {
           font-size: 24;
         }
         
-        .card-description {
+        .cardDescription {
           font-size: 28px;
           
         }  
   }
   @media screen and (min-width: 992px) {
   
-    #card_cont{
+    #cardCont{
       box-shadow: 13px 17px 8px rgba(0, 0, 0, 0.9);
       display: flex;
       flex-direction: column;
       border-radius: 10px;
     }
-    .card-title {
-      font-size: 58px;
+    .cardTitle {
+      font-size: 50px;
       text-align: center;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
     }
   
-    .card-activity {
+    .cardActivity {
       text-align: center;
     }
-    .card-date {
+    .cardDate {
       justify-content: space-between;
       margin-top: 1rem;
+      margin-inline: 5rem;
     
     }
  

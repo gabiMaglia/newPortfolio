@@ -27,7 +27,4 @@ function App() {
     </div>
   );
 }
-{
-  /* <Route path="/" element={<Proyects />} */
-}
 export default App;

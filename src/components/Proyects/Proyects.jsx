@@ -13,7 +13,7 @@ const proyects = [
       "This landing-page is entirely developed in ReactJS, it back-ends is developed in ExpressJS and Handlebars. Back-end can store students and their entire schedule of activities, the list of trainers and how many students are in each class.",
     tecnologias: "ReactJS/ExpressJS",
     externalLink: "",
-    foto: ["../../../../../../assets/jobs/front-end-craneo/craneo1.png"],
+    foto: ["/assets/jobs/front-end-craneo/craneo1.png"],
     tipo: 'jobs'
   },
   {
@@ -69,11 +69,6 @@ const Proyects = () => {
       </header>
 
       <ProyectContainer proyects={jobsList} />
-
-
-
-
-
 
     </>
   );

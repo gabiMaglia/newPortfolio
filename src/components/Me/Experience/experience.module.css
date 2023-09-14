@@ -1,0 +1,7 @@
+.expCont {
+   min-height:calc(100svh-3rem) ;
+   display: flex;
+   padding-block: 8%;
+   place-content: center;
+
+}

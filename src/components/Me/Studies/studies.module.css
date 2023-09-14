@@ -1,0 +1,8 @@
+.studiesCont {
+    padding-inline: 2rem;
+    min-height:calc(100svh-3rem) ;
+    display: flex;
+    gap: 2rem;
+    padding-block: 8%;
+    place-content: center;
+}
