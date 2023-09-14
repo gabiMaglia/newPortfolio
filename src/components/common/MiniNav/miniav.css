@@ -1,3 +1,9 @@
+
+#mininav{
+  display: flex;
+  justify-content: space-between;
+}
+
 .toggle-cont span,
 .toggle-cont i,
 .toggle-cont h4 {

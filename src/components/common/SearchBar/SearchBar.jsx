@@ -21,6 +21,7 @@ const SearchBar = ({ onSearch }) => {
         <FontAwesomeIcon className="search-icon" icon={faSearch} />
      
       <input
+        
         id='proyects-search-bar'
         type="text"
         value={searchTerm}

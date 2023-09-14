@@ -5,10 +5,10 @@ import SearchBar from "../SearchBar/SearchBar";
 import SocialMediaBtn from "../Button/SocialMediaBtn";
 
 const MiniNav = (props) => {
-  const {pathname} = useLocation()
+  const { pathname } = useLocation();
 
   return (
-    <>
+
       <nav
         id="mininav"
         className="navbar navbar-dark navbar-expand-lg text-light bg-black d-flex justify-content-center px-2 py-3 "
@@ -29,14 +29,13 @@ const MiniNav = (props) => {
             </div>
           </div>
         </button>
+
         <div
           className="collapse navbar-collapse bg-black text-center "
           id="navbarNav"
         >
           <ul className="navbar-nav ">
-            {
-            
-            pathname === "/contact"? (
+            {pathname === "/contact" ? (
               <div className="nav-item-social ps-4">
                 {props.contact.map((item, key) => (
                   <i key={key}>
@@ -48,9 +47,7 @@ const MiniNav = (props) => {
                   </i>
                 ))}
               </div>
-            ) 
-            
-            : pathname.startsWith("/me")? (
+            ) : pathname.startsWith("/me") ? (
               props.sec.map((item, key) => (
                 <li className="nav-item ps-4" key={key}>
                   {" "}
@@ -65,26 +62,26 @@ const MiniNav = (props) => {
                   </NavLink>
                 </li>
               ))
-            ) 
-            
-            : pathname === "/proyects" ? (
-             
+            ) : pathname === "/proyects" ? (
               props.buttons.map((item, key) => (
-                
                 <li className=" ps-4" key={key}>
-                  <i className="nav-link" category={item.category} onClick={props.handleSort}>{item.name}</i>
+                  <i
+                    className="nav-link"
+                    category={item.category}
+                    onClick={props.handleSort}
+                  >
+                    {item.name}
+                  </i>
                 </li>
               ))
-            ) 
-            
-            : (
+            ) : (
               <></>
             )}
           </ul>
-          {props.searchBar ? <SearchBar onSearch={""} /> : <></>}
         </div>
       </nav>
-    </>
+
+
   );
 };
 

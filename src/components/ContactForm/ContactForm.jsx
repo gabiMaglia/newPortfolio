@@ -1,12 +1,12 @@
-import "./constactForm.module.css"
+import styles from "./constactForm.module.css"
 
 const ContactForm = () => {
     return (
 
-        <form className="row g-3 mb-4 contactForm">
-            <div className="formCont g-0 d-flex gap-1 p-1">
+        <form className={`row g-3 mb-4 ${styles.contactForm}`}>
+            <div className={`${styles.formCont} g-0 d-flex gap-1 p-1`}>
                 <div>
-                    <div className="mb-3 nombre">
+                    <div className={`mb-3 ${styles.nombre}`}>
                         <label
                             htmlFor="exampleFormControlInput1"
                             className="form-label"
@@ -89,7 +89,7 @@ const ContactForm = () => {
                     id="exampleFormControlTextarea1"
                 ></textarea>
             </div>
-            <button className=" button" type="submit">
+            <button className={`${styles.button}`} type="submit">
                 Enviar
             </button>
         </form>
