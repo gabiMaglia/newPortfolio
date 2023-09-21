@@ -10,19 +10,19 @@ const studies = [{
   institution: 'UTN',
   startDate: 'Febraury/2022',
   endDate: 'August/2022',
-  description: 'In this course I learned introductions to develope websites using ReactJS & ExpressJS'
+  description: 'introductions to develope websites using ReactJS & ExpressJS'
 }, {
   title: 'Yo Programo',
   institution: 'Argentina Programa',
   startDate: 'August/2022',
   endDate: 'January/2023',
-  description: 'In this course I learned introductions to develope websites using Amgular & Java SpringBoot'
+  description: 'introductions to develope websites using Amgular & Java SpringBoot'
 }, {
   title: 'Bootcamp Full Stack developer',
   institution: 'Soy Henry',
   startDate: 'June/2023',
   endDate: 'Present Day',
-  description: 'In this Bootcamp I am learning introductions to develope websites using ReactJS & ExpressJS'
+  description: 'advance develope techniques for websites using ReactJS & ExpressJS'
 },]
 
 const Studies = () => {

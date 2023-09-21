@@ -34,70 +34,68 @@ const Skills = () => {
       img: "GrowthMindset.png",
     },
   ];
-  useCardTransition()
-  
+  useCardTransition();
+
   return (
-    <div className="center">
-    <section id="skills-data" className="bg-white g-0 ">
-  
+    
+      <section id="skills-data" className="bg-white g-0 ">
+        <article className="hardSkikll">
+          <figure>
+            <figcaption>
+              <p className="hover-underline-animation-dark  text-black">
+                Soft Skills
+              </p>
+            </figcaption>
+            <div className="list-cont">
+              {softSkils.map((obj, i) => {
+                const loadImage = (imageName) =>
+                  require(`../../../assets/skills/${imageName}`);
+                return (
+                  <div className="skill-cont bg-black  " key={i}>
+                    <h2 className="hover-underline-animation-light">
+                      {obj.skill}
+                    </h2>
+                    <img
+                      className="skillsImg"
+                      src={loadImage(obj.img)}
+                      alt={obj.img}
+                    />
+                  </div>
+                );
+              })}
+            </div>
+          </figure>
+        </article>
 
-      <article className="hardSkikll">
-        <figure>
-          <figcaption>
-            <p className="hover-underline-animation-dark  text-black">
-              Soft Skills
-            </p>
-          </figcaption>
-          <div className="list-cont">
-            {softSkils.map((obj, i) => {
-              const loadImage = (imageName) =>
-                require(`../../../assets/skills/${imageName}`);
-              return (
-                <div className="skill-cont bg-black  " key={i}>
-                  <h2 className="hover-underline-animation-light">
-                    {obj.skill}
-                  </h2>
-                  <img
-                    className="skillsImg"
-                    src={loadImage(obj.img)}
-                    alt={obj.img}
-                  />
-                </div>
-              );
-            })}
-          </div>
-        </figure>
-      </article>
+        <article className="softSkills">
+          <figure>
+            <figcaption>
+              <p className="hover-underline-animation-dark text-black">
+                Languajes
+              </p>
+            </figcaption>
+            <div className="list-cont">
+              {hardSkills.map((obj, i) => {
+                const loadImage = (imageName) =>
+                  require(`../../../assets/skills/${imageName}`);
+                return (
+                  <div className="skill-cont bg-black" key={i}>
+                    <h2 className="hover-underline-animation-light">
+                      {obj.skill}
+                    </h2>
+                    <img
+                      className="skillsImg"
+                      src={loadImage(obj.img)}
+                      alt={obj.img}
+                    />
+                  </div>
+                );
+              })}
+            </div>
+          </figure>
+        </article>
+      </section>
 
-      <article className="softSkills">
-        <figure>
-          <figcaption>
-            <p className="hover-underline-animation-dark text-black">
-              Languajes
-            </p>
-          </figcaption>
-          <div className="list-cont">
-            {hardSkills.map((obj, i) => {
-              const loadImage = (imageName) =>
-                require(`../../../assets/skills/${imageName}`);
-              return (
-                <div className="skill-cont bg-black" key={i}>
-                  <h2 className="hover-underline-animation-light">
-                    {obj.skill}
-                  </h2>
-                  <img
-                    className="skillsImg"
-                    src={loadImage(obj.img)}
-                    alt={obj.img}
-                  />
-                </div>
-              );
-            })}
-          </div>
-        </figure>
-      </article>
-    </section>
-    </div>
   );
 };
 

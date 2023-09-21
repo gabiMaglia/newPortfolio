@@ -1,53 +1,52 @@
-.proyectCard{
-    border: 1px solid black;
-    width: 380px;
-    height: 540px;
-    box-shadow: 13px 15px 8px rgba(0, 0, 0, 0.9), 13px 15px 0px rgba(0, 0, 0, 0.9);
-    padding: 1rem .7rem;
-    display: flex;
-    flex-direction: column;
-    gap: .7rem;
-    text-align: center;
-    justify-content: space-between;
-    /* display: grid;
-    grid-template-rows: 1fr auto 1fr; */
+.proyectCard {
+  border: 1px solid black;
+  max-width: 380px;
+  min-width: 220px;
+  width: 280px;
+  height: 420px;
+  box-shadow: 13px 15px 8px rgba(0, 0, 0, 0.9), 13px 15px 0px rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background-color: rgb(179, 177, 177);
 }
 .imgCont {
-    display: grid;
-    place-content: center;
-    width: 90%;
-    height: 40%;
-    border-radius: 3px;
-    margin-inline: auto;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.9), 0px 0px 0px rgba(0, 0, 0, 0.9);
+  display: grid;
+  place-content: center;
+  width: 90%;
+  min-height: 180px;
+  min-width: 120px;
+  border-radius: 3px;
+  margin-inline: auto;
+  background-color: white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.9), 0px 0px 0px rgba(0, 0, 0, 0.9);
 }
-.title{
-    font-size: 2em;
-    font-weight: 800;
-
+.title {
+  height: 80px;
+  font-size: 24px;
+  font-weight: 800;
+  display: grid;
+  place-content: center;
+  color: white;
+  background-color: rgb(63, 62, 62);
 }
-.descriptionTech{
- box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.9), 0px 0px 0px rgba(0, 0, 0, 0.9);
- 
- display: flex;
- flex-direction: column;
- padding: .6rem .3rem;
- justify-content: space-between;
- background-color: rgb(63, 62, 62) ;
- color: white;
- font-size: 18px;
- font-weight: 600;
- letter-spacing: 1px;
+.descriptionTech {
+  background-color: rgb(63, 62, 62);
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  max-height: 100px;
+  padding: 1rem;
 }
 
 .buttonLinks {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-   
-    padding: .3rem;
+  display: flex;
+  padding: 0.3rem;
+ 
 }
 .buttonLinks button {
-    flex: 1;
- 
+
+  background-color: white;
 }

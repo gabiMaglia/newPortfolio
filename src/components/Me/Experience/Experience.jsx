@@ -6,8 +6,8 @@ const experienceMock = [
   {
     title: "Municipalidad de Granadero baigorria",
     activity: "Area Manage",
-    startDate: "Present Day",
-    endDate: "Aplil-2017 ",
+    startDate: "Aplil-2017",
+    endDate: "Present Day",
     description: "Responsible for the maintenance and operation(servers, network antenas adn cameras) of the surveillance Center of Granadero Baigorri city"
   }
 ]

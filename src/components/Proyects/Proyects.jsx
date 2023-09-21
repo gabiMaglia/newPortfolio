@@ -10,21 +10,13 @@ const proyects = [
   {
     titulo: "Gimnasio Craneo",
     descripcion:
-      "This landing-page is entirely developed in ReactJS",
-    tecnologias: "ReactJS/ExpressJS",
+      "Gimnasio Craneo Landing-Page",
+    tecnologias: "ReactJS",
     externalLink: "https://gimnasiocraneo.atlasair.tech",
     foto: ['https://res.cloudinary.com/atlasair/image/upload/v1684881336/CV/gimnasioCraneo/craneo3_frjgif.gif', 'https://res.cloudinary.com/atlasair/image/upload/v1684881336/CV/gimnasioCraneo/craneo2_zizi2g.gif',"https://res.cloudinary.com/atlasair/image/upload/v1684881336/CV/gimnasioCraneo/craneo1_l1eprn.gif"],
     tipo: 'jobs'
   },
-  {
-    titulo: "personal",
-    descripcion:
-      " Back-end can store students and their entire schedule of activities, the list of trainers and how many students are in each class.",
-    tecnologias: "ReactJS/ExpressJS",
-    externalLink: "",
-    foto: ["../../../../assets/jobs/front-end-craneo/craneo1.png", "../../../../assets/jobs/front-end-craneo/craneo2.png", "../../../../assets/jobs/front-end-craneo/craneo3.png"],
-    tipo: 'personal_proyects'
-  },
+  
   {
     titulo: "Error 404 Page",
     descripcion:

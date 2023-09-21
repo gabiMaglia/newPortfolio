@@ -1,14 +1,18 @@
-.jobContainer{
-    display: flex;
-    justify-content: center;
-    height: calc(100% - 3rem);
+.jobContainer {
+  min-height: calc(100svh - 3rem);
+  display: flex;
+  gap: 2rem;
+  padding: 1% 8rem auto;
 }
-.jobList{
-    display:flex;
-    margin-block: auto;
-    justify-content: center;
+.jobList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  place-content: center;
+  padding: 0;
+  padding-bottom: 3rem;
 }
-.jobItem{
- list-style: none;
- padding: 2rem;
+.jobItem {
+  list-style: none;
+  padding: 1rem;
 }

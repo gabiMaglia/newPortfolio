@@ -81,6 +81,11 @@
   text-align: center;
   font-size: 22px;
 }
+@media screen and (min-width: 626px) {
+  .personal-contact {
+    align-self: flex-end;
+  }
+}
 @media screen and (max-width: 626px) {
   .main-data-div {
     margin-inline: auto;
@@ -105,19 +110,17 @@
     font-size: large;
     padding-inline: 1rem;
   }
+
 }
 @media screen and (min-width: 992px) {
-  .center{
-    padding: 4rem;
-    display: grid;
-    place-content: center;
-  }
+  
   #personal-data {
     max-width: 1280px;
     border: 0.1em solid black;
     border-radius: 10px;
     box-shadow: 13px 17px 8px rgba(0, 0, 0, 0.9),
       13px 17px 0px rgba(0, 0, 0, 0.9);
+    margin-block: 1.4rem;
   }
   .photo-div {
     border-top-left-radius: 10px;
@@ -168,7 +171,8 @@
   .personal-contact {
     display: flex;
     flex-direction: column;
-    margin-top: 2.72rem;
+    align-self: center;
+    margin-top: 1.85rem;
     gap: 1rem;
   }
 
