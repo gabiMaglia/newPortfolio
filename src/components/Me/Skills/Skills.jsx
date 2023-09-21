@@ -71,7 +71,7 @@ const Skills = () => {
           <figure>
             <figcaption>
               <p className="hover-underline-animation-dark text-black">
-                Languajes
+                Languages
               </p>
             </figcaption>
             <div className="list-cont">
