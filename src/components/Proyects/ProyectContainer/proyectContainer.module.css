@@ -1,6 +1,7 @@
 .jobContainer {
   min-height: calc(100svh - 3rem);
   display: flex;
+  justify-content: center;
   gap: 2rem;
   padding: 1% 8rem auto;
 }

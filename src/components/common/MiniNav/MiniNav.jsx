@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import "./miniav.css";
-import SearchBar from "../SearchBar/SearchBar";
 import SocialMediaBtn from "../Button/SocialMediaBtn";
 
 const MiniNav = (props) => {
@@ -22,7 +21,7 @@ const MiniNav = (props) => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <div className="toggle-cont d-flexcontainer-fluid ">
+          <div className="toggle-cont d-flex container-fluid ">
             <div className="hamburger-menu d-flex gap-2">
               <h4>Menu</h4>
               <span className="navbar-toggler-icon"></span>

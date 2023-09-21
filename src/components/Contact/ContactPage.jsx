@@ -10,7 +10,6 @@ const ContactPage = () => {
     { mode: "light", fontAwsome: 'fa-solid fa-envelopes-bulk', link: 'mailto:gab.maglia@gmail.com' },
     { mode: "light", fontAwsome: 'fa-brands fa-whatsapp', link: 'wa.link/4cm67w' },
     { mode: "light", fontAwsome: 'fa-brands fa-facebook', link: 'https://www.facebook.com/gaberielsk/' },
-    { mode: "light", fontAwsome: 'fa-brands fa-linkedin', link: 'https://www.linkedin.com/in/gabriel-maglia-449577238/' },
     { mode: "light", fontAwsome: "fa-brands fa-github", link: 'https://github.com/gabiMaglia' },
   ]
   return (
