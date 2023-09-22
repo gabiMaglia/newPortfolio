@@ -120,7 +120,7 @@
     border-radius: 10px;
     box-shadow: 13px 17px 8px rgba(0, 0, 0, 0.9),
       13px 17px 0px rgba(0, 0, 0, 0.9);
-    margin-block: 1.4rem;
+    /* margin-block: 4.4rem; */
   }
   .photo-div {
     border-top-left-radius: 10px;

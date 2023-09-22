@@ -19,13 +19,15 @@ const Me = () => {
       <header className="row g-0">
         <MiniNav sec={sections} />
       </header>
-     
-      <Routes>
-        <Route path="personal" element={<Personal />} />
-        <Route path="skills" element={<Skills />} />
-        <Route path="experience" element={<Experience />} />
-        <Route path="studies" element={<Studies />} />
-      </Routes>
+     <div div className="mainCont">
+       
+        <Routes>
+          <Route path="personal" element={<Personal />} />
+          <Route path="skills" element={<Skills />} />
+          <Route path="experience" element={<Experience />} />
+          <Route path="studies" element={<Studies />} />
+        </Routes>
+     </div>
 
     </>
   );
