@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import "./miniav.css";
@@ -6,6 +7,11 @@ import SocialMediaBtn from "../Button/SocialMediaBtn";
 const MiniNav = (props) => {
   const { pathname } = useLocation();
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
   return (
 
       <nav
@@ -13,13 +19,14 @@ const MiniNav = (props) => {
         className="navbar navbar-dark navbar-expand-lg text-light bg-black d-flex justify-content-center px-2 py-3 "
       >
         <button
-          className="navbar-toggler collapsed border-0 text-light"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+      className="navbar-toggler collapsed border-0 text-light"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      onClick={toggleNavbar}
         >
           <div className="toggle-cont d-flex container-fluid ">
             <div className="hamburger-menu d-flex gap-2">
@@ -30,7 +37,8 @@ const MiniNav = (props) => {
         </button>
 
         <div
-          className="collapse navbar-collapse bg-black text-center "
+         onClick={toggleNavbar}
+          className={`bg-black text-center collapse navbar-collapse ${isOpen ? "show" : "d-none"}`}
           id="navbarNav"
         >
           <ul className="navbar-nav ">

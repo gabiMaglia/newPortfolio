@@ -17,7 +17,7 @@ const ContactForm = () => {
                             type="text"
                             className="form-control "
                             id="exampleFormControlInput1"
-                            placeholder="Como te llamas?"
+                            placeholder="Name?"
                         />
                     </div>
                     <div className="mb-3 apellido">
@@ -31,7 +31,7 @@ const ContactForm = () => {
                             type="text"
                             className="form-control "
                             id="exampleFormControlInput1"
-                            placeholder="Como es tu apellido?"
+                            placeholder="Lastname?"
                         />
                     </div>
                 </div>
@@ -47,7 +47,7 @@ const ContactForm = () => {
                             type="text"
                             className="form-control "
                             id="exampleFormControlInput1"
-                            placeholder="Donde vives?"
+                            placeholder="Where do you live??"
                         />
                     </div>
                     <div className="mb-3 empresa">
@@ -61,7 +61,7 @@ const ContactForm = () => {
                             type="text"
                             className="form-control "
                             id="exampleFormControlInput1"
-                            placeholder="A que empresa perteneces?"
+                            placeholder="Who do you work for?"
                         />
                     </div>
                 </div>
@@ -90,7 +90,7 @@ const ContactForm = () => {
                 ></textarea>
             </div>
             <button className={`${styles.button}`} type="submit">
-                Enviar
+                Send
             </button>
         </form>
 

@@ -10,10 +10,21 @@ const proyects = [
   {
     titulo: "Gimnasio Craneo",
     descripcion:
-      "Gimnasio Craneo Landing-Page",
+      "Landing Page from scratch",
     tecnologias: "ReactJS",
     externalLink: "https://gimnasiocraneo.atlasair.tech",
+    githubRepo: 'https://github.com/gabiMaglia/gimnasioCraneoFrontEnd',
     foto: ['https://res.cloudinary.com/atlasair/image/upload/v1684881336/CV/gimnasioCraneo/craneo3_frjgif.gif', 'https://res.cloudinary.com/atlasair/image/upload/v1684881336/CV/gimnasioCraneo/craneo2_zizi2g.gif',"https://res.cloudinary.com/atlasair/image/upload/v1684881336/CV/gimnasioCraneo/craneo1_l1eprn.gif"],
+    tipo: 'jobs'
+  },
+  {
+    titulo: "Chevromax",
+    descripcion:
+      "Frontend bug fix: used car list loads..",
+    tecnologias: "VueJS, express",
+    externalLink: "https://www.chevromax.com.ar",
+    githubRepo: '',
+    foto: ['https://res.cloudinary.com/atlasair/image/upload/v1696095742/pic1_qscbmc.png', 'https://res.cloudinary.com/atlasair/image/upload/v1696095742/pic3_tkoobr.png', 'https://res.cloudinary.com/atlasair/image/upload/v1696095742/pic2_hcn7ci.png' ],
     tipo: 'jobs'
   },
   
@@ -99,8 +110,6 @@ const Proyects = () => {
 
   const [jobsList, setJobsList] = useState(proyects)
 
-  const [searchBar, setSearchBar] = useState('')
-
   const handleSort = (e) => {
     const category = e.target.attributes.category.value
     if (category === "all") { setJobsList(proyects) } else {
@@ -110,12 +119,9 @@ const Proyects = () => {
     }
   }
 
-  const handleSearch = (e) => {
-    let input = e.target.value
-    setSearchBar(input)
-  };
 
-  const searchBarComponent = <SearchBar onSearch={handleSearch} />;
+
+  const searchBarComponent = <SearchBar/>;
   return (
     <section className="h-100">
       <header className="row  g-0">

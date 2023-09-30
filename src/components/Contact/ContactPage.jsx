@@ -22,9 +22,9 @@ const ContactPage = () => {
       <div className={`${styles.formCont}`}>
         <div className={styles.formTitle}>
           <strong>
-            <h2>CONTACTA CONMIGO</h2>
+            <h2>CONTACT ME</h2>
           </strong>
-          <p>Estoy a su disposicion para cualquier consulta o presupuesto</p>
+          <p>I am at your disposal for any questions or quotes.</p>
         </div>
         <ContactForm />
       </div>
