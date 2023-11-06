@@ -1,0 +1,79 @@
+.nav-container {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+#topnav {
+  height: 3.7rem;
+  display: flex;
+  background-color: white;
+}
+#topnav .link {
+  flex: 1;
+  height: 100%;
+  background-color: white;
+  color: black;
+  display: grid;
+  place-content: center;
+
+  transition: all 0.1s ease-in;
+
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 15px;
+  font-size-adjust: ic-height 1.2;
+}
+.socialM {
+  display: none;
+}
+.socialM button {
+  display: grid;
+  place-content: center;
+}
+.socialM i {
+  cursor: pointer;
+  font-size: 24px;
+}
+#topnav a:hover {
+  background: black;
+  color: white;
+}
+
+#topnav .active {
+  background: black;
+  color: white;
+}
+@media screen and (min-width: 542px) {
+  #topnav .link {
+    font-size: 16px;
+  }
+  #topnav {
+    display: flex;
+    height: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #topnav {
+    display: flex;
+    height: 4rem;
+  }
+  #topnav .link {
+    width: 100%;
+    max-width: 190px;
+    height: 100%;
+    padding: 0.2rem;
+    font-size: 16px;
+  }
+  .socialM {
+    display: flex;
+  }
+}
+
+
+
+a{
+  text-decoration: none!important;
+}
